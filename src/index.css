@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', 'Didot', 'Bodoni Moda', Georgia, serif;
+
+  /* Luxury jewellery palette */
+  --color-noir: #0a0807;
+  --color-noir-soft: #14110f;
+  --color-noir-warm: #1a1611;
+  --color-champagne: #d4b86a;
+  --color-gold: #c9a961;
+  --color-gold-deep: #b8893c;
+  --color-rose-gold: #c8a39a;
+  --color-pearl: #f4ede0;
+  --color-cream: #ebe1cf;
+  --color-ash: #6b625a;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #0a0807;
+  color: #f4ede0;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar { width: 0; }
+
+/* Warm glass */
+.glass {
+  background: rgba(20, 17, 15, 0.55);
+  backdrop-filter: blur(24px) saturate(140%);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  border: 1px solid rgba(212, 184, 106, 0.18);
+}
+
+.glass-warm {
+  background: rgba(244, 237, 224, 0.06);
+  backdrop-filter: blur(28px) saturate(150%);
+  -webkit-backdrop-filter: blur(28px) saturate(150%);
+  border: 1px solid rgba(212, 184, 106, 0.22);
+  box-shadow:
+    0 30px 80px -20px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* Reveal card — used by the zoom-into-product section */
+.reveal-card {
+  background: rgba(22, 18, 14, 0.78);
+  backdrop-filter: blur(30px) saturate(150%);
+  -webkit-backdrop-filter: blur(30px) saturate(150%);
+  border: 1px solid rgba(212, 184, 106, 0.20);
+  box-shadow:
+    0 50px 120px -20px rgba(0,0,0,0.8),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+/* Champagne gold gradient for headlines */
+.text-gold {
+  background: linear-gradient(135deg, #f4ead2 0%, #d4b86a 45%, #b8893c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-pearl {
+  background: linear-gradient(135deg, #fffbf2 0%, #f4ede0 55%, #c9b89a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-rose {
+  background: linear-gradient(135deg, #f5d5cc 0%, #c8a39a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.font-serif { font-family: var(--font-serif); }
+.font-sans  { font-family: var(--font-sans); }
+
+/* Elegant gold rule */
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a961 50%, transparent);
+}
+
+/* Vignette utility */
+.vignette::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(10,8,7,0.55) 100%);
+}
+
+/* Subtle grain texture for premium feel */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Sparkle utility */
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.sparkle { animation: sparkle 3s ease-in-out infinite; }
