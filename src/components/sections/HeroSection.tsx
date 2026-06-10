@@ -84,7 +84,7 @@ export function HeroSection() {
         aria-hidden="true"
       >
         <img
-          src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=2400&auto=format&fit=crop"
+          src="/images/hero.jpg"
           alt=""
           className="w-full h-full object-cover"
           loading="eager"

@@ -151,7 +151,7 @@ export function ZoomRevealSection() {
       <div className="absolute inset-0 flex items-center justify-center perspective-[1500px]">
         <img
           ref={imageRef}
-          src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1600&auto=format&fit=crop"
+          src="/images/ring-solitaire.jpg"
           alt="Signature solitaire ring, hand-set in 18k gold"
           className="w-[min(70vw,720px)] h-auto object-contain will-change-transform"
           style={{

@@ -9,19 +9,19 @@ const COLLECTIONS = [
     eyebrow: 'Solitaire',
     title: 'Étoile\nCollection.',
     body: 'A single brilliant-cut diamond, cradled in 18k yellow gold. The quietest statement, and the loudest.',
-    img: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=1400&auto=format&fit=crop',
+    img: '/images/ring-eternity.jpg',
   },
   {
     eyebrow: 'Necklace',
     title: 'Lune\nNecklace.',
     body: 'A crescent of rose-cut sapphires drifts along an 18k rose-gold chain. Inspired by Paris skies before midnight.',
-    img: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1400&auto=format&fit=crop',
+    img: '/images/necklace-lune.jpg',
   },
   {
     eyebrow: 'Earrings',
     title: 'Pavé\nEarrings.',
     body: 'Two hundred and forty diamonds, each set by hand across a sweep of pavé. They catch every light in the room.',
-    img: 'https://images.unsplash.com/photo-1535632066274-65a26d2c3ca8?w=1400&auto=format&fit=crop',
+    img: '/images/earrings-pave.jpg',
   },
 ];
 
