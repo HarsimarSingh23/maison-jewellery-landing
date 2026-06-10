@@ -147,7 +147,15 @@ export function ZoomRevealSection() {
         </h2>
       </div>
 
-      {/* The signature ring */}
+      {/* The signature ring
+          ─────────────────
+          The source photo has a dark-but-not-black background that would
+          otherwise look like a "tilted rectangle" floating on the noir
+          page. We apply a soft radial mask so the photo's edges fade
+          smoothly into transparency — only the ring remains visible,
+          appearing to float on the page itself. We also add a warm
+          golden drop-shadow to give the ring a subtle "glow" that lifts
+          it off the background. */}
       <div className="absolute inset-0 flex items-center justify-center perspective-[1500px]">
         <img
           ref={imageRef}
@@ -156,8 +164,15 @@ export function ZoomRevealSection() {
           className="w-[min(70vw,720px)] h-auto object-contain will-change-transform"
           style={{
             transform: 'scale(1) rotate(-18deg)',
-            filter: 'blur(0px) brightness(1)',
+            filter: 'blur(0px) brightness(1) drop-shadow(0 25px 60px rgba(212,184,106,0.25))',
             transformOrigin: 'center center',
+            // Soft radial mask — solid in the center where the ring lives,
+            // fading to transparent at the photo edges so the rectangle
+            // never reads as a "tilted square" on the dark background.
+            WebkitMaskImage:
+              'radial-gradient(ellipse 55% 60% at center, #000 35%, rgba(0,0,0,0.85) 55%, transparent 85%)',
+            maskImage:
+              'radial-gradient(ellipse 55% 60% at center, #000 35%, rgba(0,0,0,0.85) 55%, transparent 85%)',
           }}
           loading="lazy"
         />
