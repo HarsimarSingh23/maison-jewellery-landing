@@ -88,7 +88,7 @@ export function CinematicSection() {
     >
       <div className="absolute inset-0" aria-hidden="true">
         <img
-          src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=2400&auto=format&fit=crop"
+          src="/images/pearls-strand.jpg"
           alt=""
           className="cinematic-img w-full h-[120%] object-cover will-change-transform"
           style={{ top: '-10%', position: 'absolute' }}

@@ -5,13 +5,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const GALLERY_IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&auto=format&fit=crop', alt: 'Diamond solitaire', effect: 'zoom-in',  span: 'lg:col-span-2', aspect: 'aspect-[16/9]' },
-  { src: 'https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=800&auto=format&fit=crop',  alt: 'Pearl drop earrings', effect: 'zoom-out', span: 'lg:col-span-1', aspect: 'aspect-[3/4]' },
-  { src: 'https://images.unsplash.com/photo-1612965607446-25e1332775ae?w=800&auto=format&fit=crop',  alt: 'Vintage tennis bracelet', effect: 'zoom-in', span: 'lg:col-span-1', aspect: 'aspect-[3/4]' },
-  { src: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1200&auto=format&fit=crop', alt: 'Sapphire pendant', effect: 'zoom-out', span: 'lg:col-span-2', aspect: 'aspect-[16/9]' },
-  { src: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&auto=format&fit=crop',  alt: 'Eternity ring', effect: 'zoom-in',  span: 'lg:col-span-1', aspect: 'aspect-square' },
-  { src: 'https://images.unsplash.com/photo-1620656798932-902a23159e9b?w=800&auto=format&fit=crop',  alt: 'Gold chain detail', effect: 'zoom-out', span: 'lg:col-span-1', aspect: 'aspect-square' },
-  { src: 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=1200&auto=format&fit=crop', alt: 'Bridal collection', effect: 'zoom-in',  span: 'lg:col-span-1', aspect: 'aspect-square' },
+  { src: '/images/pearls-strand.jpg',     alt: 'Diamond solitaire',       effect: 'zoom-in',  span: 'lg:col-span-2', aspect: 'aspect-[16/9]' },
+  { src: '/images/pearl-earrings.jpg',    alt: 'Pearl drop earrings',     effect: 'zoom-out', span: 'lg:col-span-1', aspect: 'aspect-[3/4]' },
+  { src: '/images/tennis-bracelet.jpg',   alt: 'Vintage tennis bracelet', effect: 'zoom-in',  span: 'lg:col-span-1', aspect: 'aspect-[3/4]' },
+  { src: '/images/sapphire-pendant.jpg',  alt: 'Sapphire pendant',        effect: 'zoom-out', span: 'lg:col-span-2', aspect: 'aspect-[16/9]' },
+  { src: '/images/ring-eternity.jpg',     alt: 'Eternity ring',           effect: 'zoom-in',  span: 'lg:col-span-1', aspect: 'aspect-square' },
+  { src: '/images/gold-chain.jpg',        alt: 'Timepiece in 18k gold',   effect: 'zoom-out', span: 'lg:col-span-1', aspect: 'aspect-square' },
+  { src: '/images/bridal.jpg',            alt: 'Bridal collection',       effect: 'zoom-in',  span: 'lg:col-span-1', aspect: 'aspect-square' },
 ];
 
 export function GallerySection() {

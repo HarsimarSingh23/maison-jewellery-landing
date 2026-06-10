@@ -74,7 +74,7 @@ export function DetailsSection() {
         aria-hidden="true"
       >
         <img
-          src="https://images.unsplash.com/photo-1606293459039-eaf2c20cf7c2?w=2000&auto=format&fit=crop"
+          src="/images/atelier-workbench.jpg"
           alt=""
           className="w-full h-full object-cover opacity-25"
           loading="lazy"

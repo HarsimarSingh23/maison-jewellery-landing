@@ -5,7 +5,7 @@ portfolio piece to attract clients for custom websites.
 
 Hand-coded with **React + TypeScript + Tailwind CSS v4 + GSAP ScrollTrigger**.
 
-![Maison hero](https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=1200&auto=format&fit=crop)
+![Maison hero](public/images/hero.jpg)
 
 ---
 
